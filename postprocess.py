@@ -296,7 +296,10 @@ def main():
                 % (i, len(fns), time.time() - tic, len(all_features))
             )
             tic = time.time()
+        print("fn", fn)
+        print("url", url)
         features = postprocess_single_file(fn, url, decision_threshold=args.threshold)
+        print("Features extracted", features)
         for feature in features:
             all_features.append(feature)
 

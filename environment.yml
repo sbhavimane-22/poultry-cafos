@@ -1,4 +1,4 @@
-name: cafo
+name: cafo-pytorch
 channels:
   - conda-forge
 dependencies:
@@ -13,7 +13,7 @@ dependencies:
   - pip
   - python
   - pytorch-gpu
-    #- rasterio
+  # - rasterio
     #- rtree
     #- scikit-image
     #- scikit-learn
@@ -32,9 +32,14 @@ dependencies:
     - numpy
     - osmnx
     - pandas
-    - rasterio
     - rtree
     - scikit-image
     - scikit-learn
     - shapely
     - torchvision
+    # rasterio is finicky try it all with pip
+    # - fiona
+    # - gdal>3
+    - rasterio
+    # maybe add folium also
+    # and maybe need charset_normalizer » chardet

@@ -21,8 +21,6 @@ NOTE: The distance to nearest road calculation is performed **only considering r
 that are within the bounds of the GeoTIFF that is being processed**. This can lead to
 the case where there exists a road that is closer to a polygon than this script reports.
 """
-
-import argparse
 import os
 import time
 
